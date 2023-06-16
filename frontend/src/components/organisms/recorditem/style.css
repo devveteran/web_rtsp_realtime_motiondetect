@@ -1,0 +1,20 @@
+.recorditem{
+    border-width: 0;
+    border-bottom: 1px solid #222222;
+    min-height: 50px;
+    cursor: pointer;
+}
+.dir-title:hover{
+    color: red;
+}
+.dir-title{
+    color: white;
+    font-size: 16px;
+}
+.dir-title.selected {
+    color: yellow;
+}
+.recording-note {
+    color: lightgray;
+    font-size:16px;
+}

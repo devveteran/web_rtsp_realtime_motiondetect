@@ -1,0 +1,44 @@
+.canvas {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 3;
+}
+
+.canvas-menu {
+    position: absolute;
+    background-color: #ffffff50;
+    z-index: 6;
+    display: flex;
+    flex-direction: column;
+}
+.menu-button-wrapper {
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+    padding: 5px;
+}
+.btn-menu {
+    width: 50%;
+    border-radius: 5px;
+    background-color: #ffffff;
+    height: 40px;
+    border-width: 0;
+    cursor: pointer;
+    color: black;
+    font-size: 16px;
+    transition: all 0.5s;
+}
+.btn-menu:hover {
+    background-color: #eeeeee;
+    transition: all 0.5s;
+}
+.menu-input {
+    border-radius: 5px;
+    height: 30px;
+    border-color: #eeeeee;
+    font-size: 14px;
+    margin: 5px;
+}

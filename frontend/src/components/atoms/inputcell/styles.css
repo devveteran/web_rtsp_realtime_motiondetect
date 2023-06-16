@@ -1,0 +1,18 @@
+.cell {
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px 0;
+}
+.cell-title {
+    width: 200px;
+}
+.cell-value {
+    flex: 1;
+    border-radius: 5px;
+    height: 30px;
+    border-color: gray;
+    border-width: 1px;
+    transition: all 1s;
+    padding: 0 5px;
+}

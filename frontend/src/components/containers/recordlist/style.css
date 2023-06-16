@@ -1,0 +1,14 @@
+::-webkit-scrollbar {
+    display: none;
+}
+
+.record-list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    overflow-y: scroll;
+    width: -webkit-fill-available;
+    height: calc(100% - 80px);
+    scroll-behavior: smooth;
+    padding: 0 15px;
+}
