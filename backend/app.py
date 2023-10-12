@@ -10,12 +10,12 @@ import subprocess
 warnings.simplefilter("ignore")
 
 mainThread = MainThread()
-mainThread.setCameras(2, ["rtsp://admin:sphere2023@172.16.0.101:554/", "rtsp://admin:sphere2023@172.16.0.112:554/"])
-#mainThread.setCameras(3, [0, 0, 0])
+# mainThread.setCameras(2, ["rtsp://admin:sphere2023@172.16.0.101:554/", "rtsp://admin:sphere2023@172.16.0.112:554/"])
+mainThread.setCameras(3, [0, 0, 0])
 
 app = Flask(__name__)
 # app.config['CORS_HEADERS'] = 'Content-Type'
-cors = CORS(app)
+# cors = CORS(app)
 
 def get_directories():
     d = "./videos"
@@ -28,10 +28,11 @@ def list_files(dir):
     return dir_list
 
 @app.route('/', methods=["GET"])
-@cross_origin()
+# @cross_origin()
 def get_all_dirs():
     dirs = get_directories()
     return json.dumps({'list': dirs})
+
 
 @app.route('/files', methods=["GET"])
 @cross_origin()
